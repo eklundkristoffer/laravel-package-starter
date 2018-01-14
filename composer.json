@@ -1,0 +1,25 @@
+{
+    "name": "eklundkristoffer/laravel-package-starter",
+    "authors": [
+        {
+            "name": "eklundkristoffer",
+            "email": "eklukris@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Package\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Package\\Providers\\PackageServiceProvider"
+            ]
+        }
+    }
+}
